@@ -10,9 +10,20 @@
     background-color: var(--grey-300);
     width: 90vw;
     padding: 1rem 0rem;
-    border-radius: 8px;
-    font-size: 14px;
+    border-radius: .5rem;
+    font-size: 0.875rem;
     font-weight: 500;
+    transition: -webkit-transform 450ms;
+    transition: transform 450ms;
+    transition: transform 450ms, -webkit-transform 450ms;
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+
+.links a:hover {
+    background-color: var(--grey-400);
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%);
 }
 
 .icon__links {
@@ -26,7 +37,7 @@
 
 @media screen and (min-width : 1000px) {
     .links a {
-        font-size: 18px;
+        font-size: 1.125rem;
         width: 75vw;
     }
 }

@@ -4,7 +4,7 @@ const Linkbox = () => {
   return (
     <>
         <div className="links">
-            <a href="" target="_blank">Twitter Link</a>
+            <a id="twitter__link" href="https://twitter.com/adedotxn" target="_blank">Twitter Link</a>
             <a id="btn__zuri" href="https://training.zuri.team/" target="_blank">Zuri Team</a>
             <a id="books" href="http://books.zuri.team/" target="_blank">Zuri Books</a>
             <a id="book__python" href="https://books.zuri.team/python-for-beginners?ref_id=adedotxn" target="_blank">Python Books</a>
@@ -13,8 +13,8 @@ const Linkbox = () => {
         </div>
 
         <div className="icon__links">
-            <a href="">  <img src="../src/assets/slack.svg" alt="slack link" />  </a>
-            <a href=""> <img src="../src/assets/github.svg" alt="" /> </a>
+            <a href="">  <img src="../public/assets/slack.svg" alt="slack link" />  </a>
+            <a href=""> <img src="../public/assets/github.svg" alt="github" /> </a>
         </div>
     </>
   )

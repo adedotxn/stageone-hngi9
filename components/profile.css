@@ -5,16 +5,34 @@ header {
     position: relative;
 }
 
+#slack {
+    display: none;
+}
+
 
 .profile__img_container {
     width: 5.5rem;
     height: 5.5rem;
     cursor: pointer;
+    position: relative;
 }
 
-.profile__img_container>img:hover {
+.camera__icon {
+    display: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: .5rem;
+    left: 40%;
+}
+
+.profile__img_container:hover {
     -webkit-filter: brightness(70%);
     filter: brightness(70%);
+}
+
+.profile__img_container>#profile__img:hover+.camera__icon {
+    display: block;
 }
 
 header img {
@@ -36,6 +54,16 @@ header>h1 {
     right: 3rem;
     top: -1rem;
     cursor: pointer;
+    transition: -webkit-transform 450ms;
+    transition: transform 450ms;
+    transition: transform 450ms, -webkit-transform 450ms;
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.options_container:hover {
+    border: 3px dotted var(--grey-400);
+    -webkit-transform: translateY(-6%);
+    transform: translateY(-6%);
 }
 
 
