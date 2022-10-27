@@ -1,8 +1,9 @@
 import './profile.css'
 import shareIcon from '../src/assets/share-icon.svg'
 import optionsIcon from '../src/assets/options-icon.svg'
-import profileImg from '../src/assets/placeholder_pfp.png'
 import cameraIcon from '../src/assets/camera.svg'
+import profileImgg from '../src/assets/pfp.jpg'
+
 
 const Header = () => {
   return (
@@ -13,7 +14,7 @@ const Header = () => {
         </div>
 
         <div className="profile__img_container">
-            <img id = "profile__img" src={profileImg} alt="profile image" />
+            <img id = "profile__img" src={profileImgg} alt="profile image" />
 
             <img className='camera__icon' src={cameraIcon} alt="change profile image icon" />
         </div>

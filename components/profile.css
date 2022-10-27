@@ -31,6 +31,12 @@ header {
     filter: brightness(70%);
 }
 
+#profile__img {
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius: 50%;
+}
+
 .profile__img_container>#profile__img:hover+.camera__icon {
     display: block;
 }
