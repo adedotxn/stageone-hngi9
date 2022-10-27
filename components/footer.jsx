@@ -1,8 +1,8 @@
 import './footer.css'
-import zuriLogo from '../public/zuri logo.png'
-import zuriLogoDesktop from '../public/zuri logo (desktop).png'
-import i4GLogo from '../public/I4G.png'
-import i4GLogoDesktop from '../public/I4G (desktop).png'
+import zuriLogo from '../src/assets/zuri logo.png'
+import zuriLogoDesktop from '../src/assets/zuri logo (desktop).png'
+import i4GLogo from '../src/assets/I4G.png'
+import i4GLogoDesktop from '../src/assets/I4G (desktop).png'
 
 const Footer = () => {
   return (

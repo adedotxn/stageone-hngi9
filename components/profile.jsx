@@ -1,8 +1,8 @@
 import './profile.css'
-import shareIcon from '../public/share-icon.svg'
-import optionsIcon from '../public/options-icon.svg'
-import profileImg from '../public/placeholder_pfp.png'
-import cameraIcon from '../public/camera.svg'
+import shareIcon from '../src/assets/share-icon.svg'
+import optionsIcon from '../src/assets/options-icon.svg'
+import profileImg from '../src/assets/placeholder_pfp.png'
+import cameraIcon from '../src/assets/camera.svg'
 
 const Header = () => {
   return (
