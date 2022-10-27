@@ -1,0 +1,32 @@
+.links {
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+}
+
+.links a {
+    color: black;
+    text-align: center;
+    background-color: var(--grey-300);
+    width: 90vw;
+    padding: 1rem 0rem;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.icon__links {
+    margin: 2rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+@media screen and (min-width : 1000px) {
+    .links a {
+        font-size: 18px;
+        width: 75vw;
+    }
+}

@@ -1,0 +1,33 @@
+footer {
+    margin-top: 1rem;
+    display: grid;
+    padding: 2.2rem 0rem 1rem 0rem;
+    margin: 0rem 1.3rem;
+    width: 90vw;
+    border-top: 1px solid var(--grey-300)
+}
+
+
+footer p {
+    font-size: .9rem;
+    font-weight: 400;
+    color: var(--grey-500);
+}
+
+
+
+
+@media screen and (min-width : 768px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0rem 1rem 0rem;
+        margin: 2rem 3rem 0rem 3rem;
+
+    }
+
+    footer p {
+        font-weight: 400;
+    }
+}
