@@ -15,8 +15,8 @@ const Linkbox = () => {
         </div>
 
         <div className="icon__links">
-            <a href="">  <img src={slackIcon} alt="slack link" />  </a>
-            <a href=""> <img src={githubIcon} alt="github" /> </a>
+            <a href="https://t.co/rpfEE3DFKZ" target="_blank">  <img src={slackIcon} alt="slack link" />  </a>
+            <a href="https://github.com/adedotxn/stageone-hngi9" target="_blank"> <img src={githubIcon} alt="github" /> </a>
         </div>
     </>
   )
