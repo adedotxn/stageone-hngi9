@@ -1,16 +1,21 @@
 import './profile.css'
+import shareIcon from '../public/share-icon.svg'
+import optionsIcon from '../public/options-icon.svg'
+import profileImg from '../public/placeholder_pfp.png'
+import cameraIcon from '../public/camera.svg'
+
 const Header = () => {
   return (
     <header>
         <div className="options_container">
-            <img className='more_options__mobile' src="../public/assets/options-icon.svg" alt="click to see more profile options/settings" />
-            <img className="share" src="../public/assets/share-icon.svg" alt="" />
+            <img className='more_options__mobile' src={optionsIcon} alt="more profile settings" />
+            <img className="share" src={shareIcon} alt="share link" />
         </div>
 
         <div className="profile__img_container">
-            <img id = "profile__img" src="../public/assets/placeholder_pfp.png" alt="current user profile image" />
+            <img id = "profile__img" src={profileImg} alt="profile image" />
 
-            <img className='camera__icon' src="../public/assets/camera.svg" alt="" />
+            <img className='camera__icon' src={cameraIcon} alt="change profile image icon" />
         </div>
 
         <h1 id='twitter'>adedotxn</h1>

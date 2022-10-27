@@ -1,4 +1,6 @@
 import './linkbox.css'
+import slackIcon from '../public/slack.svg'
+import githubIcon from '../public/github.svg'
 
 const Linkbox = () => {
   return (
@@ -13,8 +15,8 @@ const Linkbox = () => {
         </div>
 
         <div className="icon__links">
-            <a href="">  <img src="../public/assets/slack.svg" alt="slack link" />  </a>
-            <a href=""> <img src="../public/assets/github.svg" alt="github" /> </a>
+            <a href="">  <img src={slackIcon} alt="slack link" />  </a>
+            <a href=""> <img src={githubIcon} alt="github" /> </a>
         </div>
     </>
   )
