@@ -1,0 +1,7 @@
+{
+    "rewrites":  [
+      {"source": "/(.*)", "destination": "/"},
+      { "source": "/contact", "destination": "/contact", "permanent": false }
+    ]
+  }
+  
