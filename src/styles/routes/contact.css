@@ -41,12 +41,15 @@
 .contact_input__section input {
     background: transparent;
     color: #344054;
-    border: 1px solid var(--grey-300);
     padding: .5rem;
     border-radius: .5rem;
     font-weight: 400;
+    /* border: 1px solid var(--grey-300); */
     font-size: 1rem;
 }
+
+
+
 
 .contact_input__section input:hover,
 .contact_input__section textarea:hover {
@@ -80,9 +83,29 @@
     background-color: var(--primary-700);
 }
 
+.contact__form #btn__submit:disabled {
+    cursor: auto;
+    background-color: var(--primary-200);
+}
+
 .checkbox__wrapper label {
     color: var(--grey-600);
     font-size: 1rem;
+}
+
+.error__message {
+    margin: .2rem;
+    font-size: .875rem;
+    font-weight: 400;
+    color: #F83F23;
+}
+
+.input__error {
+    border: 1px solid #F83F23;
+}
+
+.valid__input {
+    border: 1px solid var(--grey-300);
 }
 
 

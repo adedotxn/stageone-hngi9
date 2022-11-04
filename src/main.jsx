@@ -5,6 +5,7 @@ import "./index.css";
 import ErrorPage from "./error-page";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import ContactPage from "./routes/contact";
+import Footer from "../components/footer";
 
 const router = createBrowserRouter([
   {
