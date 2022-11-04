@@ -176,7 +176,8 @@ const ContactPage = () => {
               id="agreement"
             />
             <label htmlFor="agreement">
-              You agree to providing your data to @adedotxn who may contact you.
+              You agree to providing your data to Philip Adewole who may contact
+              you.
             </label>
           </div>
 
