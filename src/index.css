@@ -15,6 +15,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
   --grey-25: #FCFCFD;
   --grey-100: #F2F4F7;
   --grey-200: #EAECF0;
@@ -29,6 +30,8 @@
   --primary-200: #B2DDFF;
   --primary-600: #1570EF;
   --primary-700: #175CD3;
+
+  --bg: var(--grey-100);
 
 }
 

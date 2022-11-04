@@ -18,15 +18,21 @@ const initialFormErrors = {
 };
 
 const ContactPage = () => {
+  //form state
   const [formDetails, setFormDetails] = useState(initialData);
-  const [formErrors, setFormErrors] = useState(initialFormErrors);
-  const [isChecked, setIsChecked] = useState(false);
-  const [allowSubmit, setAllowSubmit] = useState(false);
 
+  //when false, input is valid, when true there is an error
+  const [formErrors, setFormErrors] = useState(initialFormErrors);
+
+  //checkbox checked state
+  const [isChecked, setIsChecked] = useState(false);
+
+  //handling checkbox input
   const handleChecked = () => {
     setIsChecked(!isChecked);
   };
 
+  //handling form inputs
   function handleFormDetails(e) {
     setFormDetails({
       ...formDetails,
@@ -34,6 +40,7 @@ const ContactPage = () => {
     });
   }
 
+  //dynamically removing the error state once it's non empty
   useEffect(() => {
     if (formDetails.message !== "") {
       setFormErrors({ message: false });
@@ -54,6 +61,8 @@ const ContactPage = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
+
+    //toggling error hints for empty fields when submit is clicked
     if (formDetails.firstName === "") {
       setFormErrors({ firstName: true });
     }
@@ -70,7 +79,17 @@ const ContactPage = () => {
       setFormErrors({ message: true });
     }
 
-    console.log(formDetails);
+    //making sure all fields are non-empty before submission can run
+    if (
+      formDetails.email === "" ||
+      formDetails.message === "" ||
+      formDetails.firstName === "" ||
+      formDetails.lastName === ""
+    ) {
+      return;
+    }
+
+    // console.log(formDetails);
   }
   return (
     <>
@@ -139,7 +158,8 @@ const ContactPage = () => {
               name="message"
               id="message"
               cols="30"
-              rows="10"
+              rows="5"
+              placeholder="Send me a message and I'll reply you as soon as possible..."
               className={formErrors.message ? "input__error" : "valid__input"}
             />
             <p className="error__message">
