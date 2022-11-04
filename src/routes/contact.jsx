@@ -21,6 +21,7 @@ const ContactPage = () => {
   const [formDetails, setFormDetails] = useState(initialData);
   const [formErrors, setFormErrors] = useState(initialFormErrors);
   const [isChecked, setIsChecked] = useState(false);
+  const [allowSubmit, setAllowSubmit] = useState(false);
 
   const handleChecked = () => {
     setIsChecked(!isChecked);
@@ -155,7 +156,7 @@ const ContactPage = () => {
               id="agreement"
             />
             <label htmlFor="agreement">
-              You agree to providing your data to {`name`} who may contact you.
+              You agree to providing your data to @adedotxn who may contact you.
             </label>
           </div>
 
